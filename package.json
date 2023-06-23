@@ -3,14 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "live-server",
-    "test": "rollup"
+    "build": "rollup -c --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "rollup": "^3.25.1"
+  "dependencies": {},
+  "devDependencies": {
+    "rollup": "^3.25.1",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "rollup-plugin-import-css": "^3.2.1"
   }
 }
